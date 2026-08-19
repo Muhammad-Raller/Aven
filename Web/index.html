@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aspen 0.5.0 — a fast, expressive preterpiled programming language by Raller Projects.">
+  <title>Aspen — Programming, without the noise.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <header class="nav">
+    <a class="brand" href="#top"><span class="logo">A</span><span>Aspen</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#syntax">Syntax</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-button" href="https://github.com/Muhammad-Raller" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="badge">ASPEN 0.5.0 · COMING SOON</div>
+      <h1>Programming should feel<br><span>natural.</span></h1>
+      <p class="lead">Aspen is a lightweight, expressive programming language designed to keep syntax simple while leaving room for serious software.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/Muhammad-Raller" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="button secondary" href="#syntax">See the syntax</a>
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>Aspen</span></div>
+        <pre><span class="muted">$</span> aspen
+<span class="green">aspen</span> <span class="muted">&gt;&gt;&gt;</span> start {
+    write(<span class="orange">"Hello, Aspen!"</span>)
+}
+<span class="green">Hello, Aspen!</span></pre>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head"><span>01</span><h2>Built for real programs.</h2></div>
+      <div class="cards">
+        <article><div class="icon">⚡</div><h3>Fast by design</h3><p>A clean compiler pipeline is being built around Aspen's lexer, parser, semantic analysis and native code generation.</p></article>
+        <article><div class="icon">⌘</div><h3>Simple syntax</h3><p>Readable constructs such as <code>start { }</code>, <code>write()</code>, imports, functions, classes and structured control flow.</p></article>
+        <article><div class="icon">◈</div><h3>Growing ecosystem</h3><p>A standard library, the AlKhwarzmi math library and the Xylem IDE are part of the wider Aspen project.</p></article>
+      </div>
+    </section>
+
+    <section id="syntax" class="section split">
+      <div><div class="eyebrow">THE LANGUAGE</div><h2>Small syntax.<br>Serious ambitions.</h2><p>Aspen is intended to be approachable on day one and powerful enough to grow with the developer. Its syntax is deliberately compact rather than packed with unnecessary ceremony.</p></div>
+      <div class="code-card"><div class="code-title">example.apf</div><pre><span class="purple">import</span> AlKhwarzmi
+
+<span class="purple">start</span> {
+    name = <span class="orange">"Aspen"</span>
+    x = <span class="blue">10</span>
+
+    <span class="purple">if</span> x &gt; <span class="blue">5</span> {
+        write(<span class="orange">"Welcome to "</span> + name)
+    }
+}</pre></div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="section-head"><span>02</span><h2>Where Aspen is going.</h2></div>
+      <div class="roadmap">
+        <div class="road active"><b>0.5.0</b><h3>Foundation</h3><p>Lexer, parser, AST, semantic groundwork and runtime development.</p></div>
+        <div class="road"><b>0.6</b><h3>Native pipeline</h3><p>Stronger compilation and executable generation with broader standard-library support.</p></div>
+        <div class="road"><b>1.0</b><h3>Production</h3><p>A stable general-purpose language and a polished developer experience.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div><div class="eyebrow">RALLER PROJECTS</div><h2>Want to build with Aspen?</h2><p>Follow the project on GitHub or get in touch directly.</p></div>
+      <a class="contact-mail" href="mailto:info@raller.pro">info@raller.pro <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><div>© 2026 Raller Projects · Aspen</div><div><a href="https://github.com/Muhammad-Raller" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:info@raller.pro">Contact</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
