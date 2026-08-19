@@ -1,4 +1,4 @@
-# Aspen 🌲
+# Aven 🗻
 
 Aspen is a programming language I'm building from scratch.
 
