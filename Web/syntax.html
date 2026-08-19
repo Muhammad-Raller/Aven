@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aven language — syntax reference and examples.">
+  <title>Aven — Syntax</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="logo">A</span><span>Aven</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="help.html">Help</a>
+      <a class="nav-button" href="https://github.com/Muhammad-Raller" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="section-head"><span>01</span><h2>Syntax overview</h2></div>
+      <p class="lead">This page provides a concise reference for Aven's syntax and small examples to get started.</p>
+
+      <div class="code-card">
+        <div class="code-title">example.av</div>
+        <pre><span class="purple">import</span> AlKhwarzmi
+
+<span class="purple">start</span> {
+    name = <span class="orange">"Aven"</span>
+    x = <span class="blue">10</span>
+
+    <span class="purple">if</span> x &gt; <span class="blue">5</span> {
+        write(<span class="orange">"Welcome to "</span> + name)
+    }
+}
+
+// functions
+<span class="purple">fn</span> greet(name) {
+    write(<span class="orange">"Hello, "</span> + name)
+}
+</pre>
+      </div>
+
+      <h3>Primitives</h3>
+      <ul>
+        <li>Numbers: 123, 3.14</li>
+        <li>Strings: "text"</li>
+        <li>Booleans: true, false</li>
+      </ul>
+
+      <h3>Control flow</h3>
+      <p>if, else, for, while (examples above)</p>
+
+    </section>
+
+    <section class="section">
+      <div class="section-head"><span>02</span><h2>Examples</h2></div>
+      <div class="cards">
+        <article>
+          <h3>Hello</h3>
+          <pre><span class="purple">start</span> { write(<span class="orange">"Hello, Aven!"</span>) }</pre>
+        </article>
+        <article>
+          <h3>Loop</h3>
+          <pre><span class="purple">for</span> i in 0..5 { write(i) }</pre>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Raller Projects · Aven</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
